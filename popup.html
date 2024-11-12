@@ -1,0 +1,28 @@
+// The popup will allow users to select preferences and initiate question generation.
+<!DOCTYPE html>
+<html>
+<head>
+  <title>NeuralFlux</title>
+  <style>
+    /* Basic styling for popup */
+  </style>
+</head>
+<body>
+  <h2>NeuralFlux</h2>
+  <label for="questionType">Type of Questions:</label>
+  <select id="questionType">
+    <option value="logical">Logical</option>
+    <option value="empathic">Empathic</option>
+    <option value="analytical">Analytical</option>
+  </select>
+  <label for="difficulty">Difficulty:</label>
+  <select id="difficulty">
+    <option value="easy">Easy</option>
+    <option value="medium">Medium</option>
+    <option value="hard">Hard</option>
+  </select>
+  <button id="generateQuestions">Generate Questions</button>
+  <div id="questionsContainer"></div>
+  <script src="popup.js"></script>
+</body>
+</html>
